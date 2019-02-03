@@ -1,0 +1,51 @@
+.hero {
+  position: relative;
+  background: #000;
+  color: #fff;
+  text-align: center;
+}
+
+.heroImage {
+  /*
+    Ensure golden ratio for the hero size while limiting it to some extend to
+    the viewport width
+  */
+  height: 32vh;
+  max-height: 400px;
+  overflow: hidden;
+}
+
+.heroDetails {
+  height: 75%;
+  width: 80%;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 0);
+  font-size: 14px;
+  padding: 0 0.5em;
+}
+
+@media(min-width: 600px) {
+  .heroDetails {
+    font-size: 16px;
+  }
+}
+
+@media(min-width: 1000px) {
+  .heroDetails {
+    font-size: 20px;
+  }
+}
+
+.heroHeadline {
+  margin: 0;
+  font-family: 'Lobster'
+}
+
+.heroTitle {
+  margin: 0;
+  font-size: 1.125em;
+  font-weight: bold;
+}
