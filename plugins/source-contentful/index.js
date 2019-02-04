@@ -35,8 +35,10 @@ class ContentfulSource {
 
     for (const contentType of contentTypes) {
       const { name, sys: { id }} = contentType
+      console.log(name)
       const typeName = store.makeTypeName(name)
-      const route = this.options.routes[name] || `/${store.slugify(name)}/:slug`
+      console.log(typeName)
+      const route = this.options.routes[typeName] || `/${store.slugify(name)}/:slug`
 
       store.addContentType({ typeName, route })
 

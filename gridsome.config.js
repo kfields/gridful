@@ -14,7 +14,10 @@ module.exports = {
         accessToken: '3128fab970a4394f425899793c8a6a5d2351721fcc09377533759e4a0211cbd6', // required
         host: 'cdn.contentful.com',
         environment: 'master',
-        typeName: 'Contentful'
+        typeName: 'Contentful',
+        routes: {
+          "ContentfulBlogPost": '/blog/:slug'
+        }
       }
     }
   ]

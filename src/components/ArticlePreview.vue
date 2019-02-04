@@ -5,7 +5,7 @@
       <Fluid alt="" :src="article.heroImage.file.url.src"/>
     </div>
     <h3 class="previewTitle">
-      <g-link :to="`/blog-post/${article.slug}`" >
+      <g-link :to="`/blog/${article.slug}`" >
         {{article.title}}
       </g-link>
     </h3>

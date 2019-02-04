@@ -6,10 +6,12 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = function (api) {
+  /*
   api.loadSource(store => {
     store.addContentType({
       typeName: 'Contentful',
       route: '/blog-post/:slug'
     })
   })
+  */
 }
