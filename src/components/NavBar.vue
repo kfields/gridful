@@ -43,7 +43,7 @@
     <div class="navbar-end">
       <div class="navbar-item">
         <a href="https://github.com/kfields/gridful">
-          <SimpleIcon name="GitHub"/>
+          <v-icon name="brands/github" scale="2"/>
         </a>
         <!--
         <div class="buttons">
@@ -61,6 +61,8 @@
 </nav>
 </template>
 <script>
+import 'vue-awesome/icons/brands/github'
+
 export default {
   name: 'NavBar',
   props: [],

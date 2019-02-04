@@ -16,6 +16,6 @@
     "node-sass": "^4.11.0",
     "sass-loader": "^7.1.0",
     "simple-icons": "^1.9.18",
-    "vue-ionicons": "^3.0.4"
+    "vue-awesome": "^3.3.1"
   }
 }

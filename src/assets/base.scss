@@ -17,6 +17,10 @@ $variable-columns: false;
   font-display: swap;
 }
 
+.fa-icon {
+  margin-left: .25em;
+  margin-right: .25em;
+}
 .simpleicon svg {
   height: 1.5em;
   width: 1.5em;
@@ -32,7 +36,7 @@ $variable-columns: false;
 }
 
 body {
-  font-family: "Avenir", Tahoma, Arial, Helvetica, sans-serif;
+  font-family: Avenir, Tahoma, Arial, Helvetica, sans-serif;
   font-size: 1em;
   line-height: 1.65;
   margin: 0;
