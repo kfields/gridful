@@ -15,6 +15,7 @@
     "marked": "^0.6.0",
     "node-sass": "^4.11.0",
     "sass-loader": "^7.1.0",
-    "simple-icons": "^1.9.18"
+    "simple-icons": "^1.9.18",
+    "vue-ionicons": "^3.0.4"
   }
 }

@@ -7,8 +7,6 @@
 </picture>
 </template>
 <script>
-const simpleIcons = require('simple-icons')
-
 const genSrc = function (src, w, h, q, fit) {
   return `${src}?w=${w}&h=${h}&q=${q}&fit=${fit} ${w}w`
 }

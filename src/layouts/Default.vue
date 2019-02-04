@@ -1,8 +1,9 @@
 <template>
   <div class="layout">
     <div class="container">
-    <NavBar/>
-    <slot/>
+      <NavBar/>
+      <slot/>
+      <FootBar/>
     </div>
   </div>
 </template>
