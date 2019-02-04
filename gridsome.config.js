@@ -26,7 +26,7 @@ module.exports = {
     }
   ],
   chainWebpack (config) {
-    console.log(config)
+    // console.log(config)
     config
     .plugin('env')
     .use(require.resolve('webpack/lib/EnvironmentPlugin'), [{ 'GRIDFUL_CONTACTHOOK': undefined }]);
