@@ -52,16 +52,28 @@ export default {
         message: this.message
       }
       console.log(payload)
+      const url = process.env.GRIDFUL_CONTACTHOOK
+      console.log(url)
       // return
-      axios.post(process.env.VUE_APP_CONTACTHOOK, payload)
+      fetch(process.env.GRIDFUL_CONTACTHOOK, {
+        method: 'post',
+        body: JSON.stringify(payload)
+      }).then(function(response) {
+        return response.json();
+      }).then(function(data) {
+        console.log('Sent Message:', data);
+      });
+          /*
+      axios.post(url, payload)
         .then(() => {
           console.log('contact success')
-          self.$router.push('/pages/success')
+          self.$router.push('/thanks')
         })
         .catch(function (error) {
           console.log(error)
-          self.$router.push('/pages/failure')
+          self.$router.push('/oops')
         })
+      */
     }
   }
 }

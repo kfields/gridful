@@ -8,6 +8,8 @@ require('dotenv').config()
 
 module.exports = {
   siteName: 'Gridful',
+  siteUrl: 'https://gridful.netlify.com',
+  siteDescription: 'Gridsome + Contentful + Love',
   plugins: [
     {
       use: '~/plugins/source-contentful',
@@ -22,5 +24,11 @@ module.exports = {
         }
       }
     }
-  ]
+  ],
+  chainWebpack (config) {
+    console.log(config)
+    config
+    .plugin('env')
+    .use(require.resolve('webpack/lib/EnvironmentPlugin'), [{ 'GRIDFUL_CONTACTHOOK': undefined }]);
+  }
 }
