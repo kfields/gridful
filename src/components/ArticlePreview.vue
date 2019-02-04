@@ -1,7 +1,8 @@
 <template>
   <div class="preview">
     <div class="previewImage">
-      <g-image alt="" :src="article.heroImage.file.url.src"/>
+      <!-- <g-image alt="" :src="article.heroImage.file.url.src"/> -->
+      <Fluid alt="" :src="article.heroImage.file.url.src"/>
     </div>
     <h3 class="previewTitle">
       <g-link :to="`/blog-post/${article.slug}`" >

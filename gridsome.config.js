@@ -6,19 +6,9 @@
 
 module.exports = {
   siteName: 'Gridful',
-  transformers: {
-    remark: {
-      externalLinksTarget: '_blank',
-      externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
-      anchorClassName: 'icon icon-link',
-      plugins: [
-        // ...global plugins
-      ]
-    }
-  },
   plugins: [
     {
-      use: '@gridsome/source-contentful',
+      use: '~/plugins/source-contentful',
       options: {
         space: 'qsxce13g8lg3', // required
         accessToken: '3128fab970a4394f425899793c8a6a5d2351721fcc09377533759e4a0211cbd6', // required

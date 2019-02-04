@@ -2,7 +2,8 @@
   <Layout>
     <div class="hero">
       <div class="heroImage">
-        <g-image alt={$page.post.title} :src="$page.post.heroImage.file.url.src"/>
+        <!-- <g-image alt={$page.post.title} :src="$page.post.heroImage.file.url.src"/> -->
+        <Fluid alt="" :src="$page.post.heroImage.file.url.src" :width=1920 />
       </div>
     </div>
     <div class="wrapper">

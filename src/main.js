@@ -6,6 +6,7 @@ import NavBar from '~/components/NavBar.vue'
 import ArticlePreview from '~/components/ArticlePreview.vue'
 import RecentArticles from '~/components/RecentArticles.vue'
 import SimpleIcon from '~/components/SimpleIcon.vue'
+import Fluid from '~/components/Fluid.vue'
 
 export default function (Vue) {
   Vue.use(Buefy)
@@ -14,4 +15,5 @@ export default function (Vue) {
   Vue.component('ArticlePreview', ArticlePreview)
   Vue.component('RecentArticles', RecentArticles)
   Vue.component('SimpleIcon', SimpleIcon)
+  Vue.component('Fluid', Fluid)
 }
