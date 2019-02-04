@@ -7,11 +7,6 @@
 
 module.exports = function (api) {
   /*
-  api.loadSource(store => {
-    store.addContentType({
-      typeName: 'Contentful',
-      route: '/blog-post/:slug'
-    })
-  })
+  Note: Whatever is done here only works in develop mode
   */
 }

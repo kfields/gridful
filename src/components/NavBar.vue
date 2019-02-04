@@ -29,14 +29,11 @@
           <g-link class="navbar-item" to="/about">
             About
           </g-link>
-          <a class="navbar-item">
-            Jobs
-          </a>
-          <a class="navbar-item">
+          <g-link class="navbar-item" to="/contact">
             Contact
-          </a>
+          </g-link>
           <hr class="navbar-divider">
-          <a class="navbar-item">
+          <a class="navbar-item" href="https://github.com/kfields/gridful/issues">
             Report an issue
           </a>
         </div>
@@ -45,7 +42,9 @@
 
     <div class="navbar-end">
       <div class="navbar-item">
-        <SimpleIcon name="GitHub"/>
+        <a href="https://github.com/kfields/gridful">
+          <SimpleIcon name="GitHub"/>
+        </a>
         <!--
         <div class="buttons">
           <a class="button is-primary">

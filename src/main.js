@@ -1,3 +1,4 @@
+// import { Field, Control, Icon, Help } from 'buefy'
 import Buefy from 'buefy'
 import 'buefy/dist/buefy.css'
 import '~/assets/base.scss'
@@ -10,6 +11,13 @@ import Fluid from '~/components/Fluid.vue'
 
 export default function (Vue) {
   Vue.use(Buefy)
+  /*
+  Vue.component('Field', Field)
+  Vue.component('Control', Control)
+  Vue.component('Icon', Icon)
+  Vue.component('Help', Help)
+  */
+  //
   Vue.component('Layout', DefaultLayout)
   Vue.component('NavBar', NavBar)
   Vue.component('ArticlePreview', ArticlePreview)
