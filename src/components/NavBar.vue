@@ -3,7 +3,7 @@
   <div class="navbar-brand">
     <a class="navbar-item" href="/">
       <img class="nav-logo" src="/logos/logo-circle-normal.svg">
-      <span style="font-size: 2em">Gridful</span>
+      <span style="font-size: 1.5em">Gridful</span>
     </a>
 
     <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
