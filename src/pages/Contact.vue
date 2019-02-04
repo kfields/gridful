@@ -61,8 +61,13 @@ export default {
       }).then(function(response) {
         return response.json();
       }).then(function(data) {
-        console.log('Sent Message:', data);
-      });
+          console.log('Contact success:', data)
+          self.$router.push('/thanks')
+      }).catch(function (error) {
+        console.log(error)
+        self.$router.push('/oops')
+      })
+
           /*
       axios.post(url, payload)
         .then(() => {
