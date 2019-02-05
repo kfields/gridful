@@ -1,5 +1,5 @@
 $variable-columns: false;
-// @import "bulma";
+@import "bulma";
 @import "./hero.scss";
 
 @font-face {
@@ -61,6 +61,8 @@ a {
 .wrapper {
   width: calc(100% - 10vmin);
   margin: 0 auto;
+  /*padding: 5vmin 0;*/
+  /*padding: 0 0 5vmin 0;*/
   padding: 5vmin 0;
 }
 
