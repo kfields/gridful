@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <HeroBanner/>
+    <!-- <HeroBanner/> -->
     <RecentArticles/>
   </Layout>
 </template>

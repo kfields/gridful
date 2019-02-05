@@ -1,18 +1,18 @@
 <template>
   <div class="preview">
-    <div class="previewImage">
-      <!-- <g-image alt="" :src="article.heroImage.file.url.src"/> -->
-      <Fluid :alt="article.title" :src="article.heroImage.file.url.src"/>
-    </div>
-    <h3 class="previewTitle">
-      <g-link :to="`/blog/${article.slug}`" >
+    <g-link :to="`/blog/${article.slug}`" >
+      <div class="previewImage">
+        <!-- <g-image alt="" :src="article.heroImage.file.url.src"/> -->
+        <Fluid :alt="article.title" :src="article.heroImage.file.url.src"/>
+      </div>
+      <h3 class="previewTitle">
         {{article.title}}
-      </g-link>
-    </h3>
+      </h3>
+      <p>
+        {{article.description}}
+      <p/>
+    </g-link>
     <small>{{article.publishDate}}</small>
-    <p>
-      {{article.description}}
-    <p/>
   </div>
 </template>
 <script>
