@@ -1,5 +1,5 @@
 $variable-columns: false;
-@import "bulma";
+// @import "bulma";
 @import "./hero.scss";
 
 @font-face {
@@ -84,7 +84,9 @@ a {
   margin: 0 0 5vmin 0;
   border-bottom: 1px solid #ddd;
 }
-
+.footer {
+  border-top: 1px solid #ddd;
+}
 /**
  *
  */

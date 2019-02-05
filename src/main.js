@@ -11,7 +11,9 @@ import RecentArticles from '~/components/RecentArticles.vue'
 import Fluid from '~/components/Fluid.vue'
 import Icon from 'vue-awesome/components/Icon'
 
-export default function (Vue) {
+export default function (Vue, context) {
+  console.log('main.js - context')
+  console.log(context)
   Vue.use(Buefy)
   /*
   Vue.component('Field', Field)

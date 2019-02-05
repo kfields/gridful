@@ -3,7 +3,7 @@
   <source :srcset="srcset" sizes="sizes">
   <!-- <img alt="" :src="imgSrc" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; object-fit: cover; object-position: center center; opacity: 1; transition: opacity 0.5s ease 0s;"> -->
   <!-- <img alt="" :src="imgSrc" style="opacity: 1; transition: opacity 0.5s ease 0s;"> -->
-  <img alt="" :src="imgSrc" style="width: 100%; height: 100%; object-fit: cover; object-position: center center; opacity: 1; transition: opacity 0.5s ease 0s;">
+  <img :alt="alt" :src="imgSrc" style="width: 100%; height: 100%; object-fit: cover; object-position: center center; opacity: 1; transition: opacity 0.5s ease 0s;">
 </picture>
 </template>
 <script>
@@ -17,6 +17,10 @@ const calcHeight = function (w) {
 export default {
   name: 'Fluid',
   props: {
+    alt: {
+      type: String,
+      default: ''
+    },
     src: {
       type: String,
       default: ''

@@ -1,8 +1,8 @@
 # Gridful
 
-Gridsome [Contentful](https://www.contentful.com) starter for creating a blog
+[Gridsome](https://gridsome.org/) [Contentful](https://www.contentful.com) starter for creating a blog
 
-![The index page of the starter blog](https://rawgit.com/contentful-userland/gridsome-contentful-starter/master/screenshot.jpg "The index page of the starter blog")
+Check out the demo at [gridful.netlify.com](https://gridful.netlify.com)
 
 Static sites are scalable, secure and have very little required maintenance. They come with a drawback though. Not everybody feels good editing files, building a project and uploading it somewhere. This is where Contentful comes into play.
 
