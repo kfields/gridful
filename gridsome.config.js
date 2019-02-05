@@ -5,6 +5,7 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 require('dotenv').config()
+const nodeExternals = require('webpack-node-externals')
 
 module.exports = {
   siteName: 'Gridful',
@@ -25,10 +26,14 @@ module.exports = {
       }
     }
   ],
-  chainWebpack (config) {
+  chainWebpack (config, options) {
+    const { isServer } = options
     // console.log(config)
+    console.log(options)
     config
     .plugin('env')
     .use(require.resolve('webpack/lib/EnvironmentPlugin'), [{ 'GRIDFUL_CONTACTHOOK': undefined }]);
+
+    if (isServer) { config.externals([ nodeExternals({ whitelist: [/^vue-awesome/, /^buefy/] }) ]) }
   }
 }
