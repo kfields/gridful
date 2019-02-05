@@ -21,18 +21,10 @@
 
     <div id="navbarBasicExample" class="navbar-menu">
       <div class="navbar-start">
-        <g-link class="navbar-item" to="/blog">Blog</g-link>
-
-        <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link">More</a>
-
-          <div class="navbar-dropdown">
-            <g-link class="navbar-item" to="/about">About</g-link>
-            <g-link class="navbar-item" to="/contact">Contact</g-link>
+          <g-link class="navbar-item" to="/about">About</g-link>
+          <g-link class="navbar-item" to="/contact">Contact</g-link>
             <hr class="navbar-divider">
             <a class="navbar-item" href="https://github.com/kfields/gridful/issues">Report an issue</a>
-          </div>
-        </div>
       </div>
 
       <div class="navbar-end">

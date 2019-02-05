@@ -28,8 +28,12 @@ export default {
 }
 </script>
 <style>
+.preview {
+  padding-top: 1vh;
+}
 .previewTitle {
   font-size: 1.5em;
+  padding-top: 1vh;
 }
 .previewImage {
   /*

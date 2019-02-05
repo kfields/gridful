@@ -1,14 +1,9 @@
 <template>
   <footer id="footer" class="footer">
-    <div class="wrapper">
-      <div class="columns">
-        <div class="column">
           <p>Made with
             <v-icon name="heart"/>by
             <a href="https://kfields.netlify.com">Kurtis Fields</a>
           </p>
-        </div>
-      </div>
       <small>
         <p>
           The source code is licensed under
@@ -21,7 +16,6 @@
           >CC ANS 4.0</a>.
         </p>
       </small>
-    </div>
   </footer>
 </template>
 <script>
