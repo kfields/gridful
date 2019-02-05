@@ -8,8 +8,7 @@
     </div>
     <div class="wrapper">
       <h1 class="section-headline">{{$page.post.title}}</h1>
-      <p
-        style="display: block">
+      <p style="display: block">
         {{$page.post.publishDate}}
       </p>
       <div v-html="markdown"/>
@@ -22,6 +21,7 @@ query BlogPostByPath($path: String!) {
   post: contentfulBlogPost(path: $path ) {
     title
     publishDate(format: "MMMM Do, YYYY")
+    description
     body
     heroImage {
       file {
@@ -45,10 +45,16 @@ export default {
   },
   metaInfo() {
     return {
-      title: this.$page.post.title
-    };
+      title: this.$page.post.title,
+      meta: [
+        { name: 'description', content: this.$page.post.description }
+      ]
+    }
   },
   mounted: function () {
+    console.log('BlogPost.vue')
+    console.log(this)
+
     this.markdown = marked(this.$page.post.body)
   }
 };

@@ -24,6 +24,11 @@ module.exports = {
           "ContentfulBlogPost": '/blog/:slug'
         }
       }
+    },
+    {
+      use: '~/plugins/plugin-seo',
+      options: {
+      }
     }
   ],
   chainWebpack (config, options) {
