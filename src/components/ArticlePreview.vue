@@ -30,11 +30,11 @@ export default {
 </script>
 <style  lang="scss">
 .preview {
-  padding-top: 1vh;
+  padding-top: 1rem;
 }
 .previewTitle {
   font-size: 1.5em;
-  padding-top: 1vh;
+  padding-top: 1rem;
 }
 .previewImage {
   max-height: 200px;
