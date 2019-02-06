@@ -21,10 +21,8 @@
 body {
   margin: 0;
 }
+
 p {
-  margin-bottom: 1rem;
-}
-ul {
   margin-bottom: 1rem;
 }
 
@@ -35,7 +33,7 @@ ul {
 .wrapper {
   width: calc(100% - 10vmin);
   margin: 0 auto;
-  padding: 5vmin 0;
+  // padding: 5vmin 0;
 }
 
 .article-list {

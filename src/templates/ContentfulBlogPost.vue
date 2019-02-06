@@ -1,18 +1,19 @@
 <template>
   <Layout>
-    <div class="hero">
-      <div class="heroImage">
-        <!-- <g-image alt={$page.post.title} :src="$page.post.heroImage.file.url.src"/> -->
-        <Fluid alt :src="$page.post.heroImage.file.url.src" :width="1920"/>
+    <article>
+      <div class="hero">
+        <div class="heroImage">
+          <Fluid alt :src="$page.post.heroImage.file.url.src" :width="1920"/>
+        </div>
       </div>
-    </div>
-    <div class="wrapper">
-      <div class="section-headline">
-        <h1>{{$page.post.title}}</h1>
-        <p style="display: block">{{$page.post.publishDate}}</p>
+      <div class="wrapper">
+        <div class="section-headline">
+          <h1>{{$page.post.title}}</h1>
+          <p style="display: block">{{$page.post.publishDate}}</p>
+        </div>
+        <div v-html="markdown"/>
       </div>
-      <div v-html="markdown"/>
-    </div>
+    </article>
   </Layout>
 </template>
 
@@ -57,3 +58,18 @@ export default {
   }
 };
 </script>
+<style>
+article .wrapper {
+  width: calc(100% - 10vmin);
+  margin: 0 auto;
+  padding: 5vmin 0;
+}
+article ul {
+  list-style: disc inside;
+  margin-bottom: 1rem;
+}
+article ul li {
+  margin-bottom: 1rem;
+}
+
+</style>
