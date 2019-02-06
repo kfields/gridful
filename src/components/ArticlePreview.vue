@@ -36,14 +36,13 @@ export default {
   padding-top: 1vh;
 }
 .previewImage {
-  /*
-    Ensure golden ratio for the hero size while limiting it to some extend to
-    the viewport width
-  */
   height: 16vh;
   max-height: 200px;
   overflow: hidden;
+  display: block;
+  width: 100%;
 }
+
 .tag {
   color: #A0A0A0;
   text-decoration: none;
