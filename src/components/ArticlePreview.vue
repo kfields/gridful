@@ -36,7 +36,7 @@ export default {
   padding-top: 1vh;
 }
 .previewImage {
-  height: 16vh;
+  /*height: 16vh;*/
   max-height: 200px;
   overflow: hidden;
   display: block;
