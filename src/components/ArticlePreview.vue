@@ -4,9 +4,9 @@
       <div class="previewImage">
         <Fluid :alt="article.title" :src="article.heroImage.file.url.src"/>
       </div>
-      <h3 class="previewTitle">
+      <div class="previewTitle">
         {{article.title}}
-      </h3>
+      </div>
       <p>
         {{article.description}}
       <p/>

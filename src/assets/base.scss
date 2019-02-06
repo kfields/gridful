@@ -19,11 +19,15 @@
 
 
 body {
-  font-family: Avenir, Tahoma, Arial, Helvetica, sans-serif;
-  font-size: 1em;
-  line-height: 1.65;
   margin: 0;
 }
+p {
+  margin-bottom: 1rem;
+}
+ul {
+  margin-bottom: 1rem;
+}
+
 .footer {
   border-top: 1px solid #ddd;
 }
