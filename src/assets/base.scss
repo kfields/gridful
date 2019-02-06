@@ -1,19 +1,3 @@
-$variable-columns: false;
-
-@font-face {
-  font-family: "Avenir";
-  font-weight: 400;
-  font-style: normal;
-  src: url("/avenir-400.woff2") format("woff2");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Lobster";
-  src: url("/lobster-regular.woff2") format("woff2");
-  font-style: normal;
-  font-display: swap;
-}
 
 .fa-icon {
   margin-left: .25em;
@@ -33,6 +17,8 @@ $variable-columns: false;
   font-family: "typeface-lobster";
 }
 
+html { font-size: 2vw; }
+
 body {
   font-family: Avenir, Tahoma, Arial, Helvetica, sans-serif;
   font-size: 1em;
@@ -43,11 +29,17 @@ body {
   border-top: 1px solid #ddd;
 }
 
-h1,
-h2,
+
+h1 {
+    font-size:2em
+}
+
+h2 {
+    font-size: 1.5em
+}
+
 h3 {
-  font-size: 2em;
-  font-weight: normal;
+    font-size: 1em
 }
 
 .wrapper {

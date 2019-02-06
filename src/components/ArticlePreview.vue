@@ -11,7 +11,9 @@
         {{article.description}}
       <p/>
     </g-link>
-    <small>{{article.publishDate}}</small>
+    <div class="previewDate">
+      <small class="previewDate">{{article.publishDate}}</small>
+    </div>
   </div>
 </template>
 <script>
@@ -26,7 +28,7 @@ export default {
   }
 }
 </script>
-<style>
+<style  lang="scss">
 .preview {
   padding-top: 1vh;
 }
@@ -39,6 +41,9 @@ export default {
   overflow: hidden;
   display: block;
   width: 100%;
+}
+.previewDate {
+  text-align: right;
 }
 
 .tag {
