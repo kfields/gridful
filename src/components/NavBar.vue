@@ -1,41 +1,43 @@
 <template>
-  <nav class="navbar" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-      <a class="navbar-item" href="/">
-        <img alt class="nav-logo" src="/logos/logo-circle-normal.svg">
-        <span style="font-size: 1.5em">Gridful</span>
-      </a>
-      
-      <a
-        role="button"
-        class="navbar-burger burger"
-        aria-label="menu"
-        aria-expanded="false"
-        data-target="navbarBasicExample"
-      >
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </a>
-    </div>
+  <header>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="/">
+          <img alt class="nav-logo" src="/logos/logo-circle-normal.svg">
+          <span style="font-size: 1.5em">Gridful</span>
+        </a>
+        
+        <a
+          role="button"
+          class="navbar-burger burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
 
-    <div id="navbarBasicExample" class="navbar-menu">
-      <div class="navbar-start">
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
           <g-link class="navbar-item" to="/about">About</g-link>
           <g-link class="navbar-item" to="/contact">Contact</g-link>
-            <hr class="navbar-divider">
-            <a class="navbar-item" href="https://github.com/kfields/gridful/issues">Report an issue</a>
-      </div>
+          <hr class="navbar-divider">
+          <a class="navbar-item" href="https://github.com/kfields/gridful/issues">Report an issue</a>
+        </div>
 
-      <div class="navbar-end">
-        <div class="navbar-item">
-          <a href="https://github.com/kfields/gridful">
-            <v-icon name="brands/github" scale="2"/>
-          </a>
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <a href="https://github.com/kfields/gridful">
+              <v-icon name="brands/github" scale="2"/>
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </header>
 </template>
 <!--
 <static-query>

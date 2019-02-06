@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <!-- <HeroBanner/> -->
-    <RecentArticles/>
+    <Articles/>
   </Layout>
 </template>
 

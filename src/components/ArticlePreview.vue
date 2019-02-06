@@ -2,7 +2,6 @@
   <div class="preview">
     <g-link :to="`/blog/${article.slug}`" >
       <div class="previewImage">
-        <!-- <g-image alt="" :src="article.heroImage.file.url.src"/> -->
         <Fluid :alt="article.title" :src="article.heroImage.file.url.src"/>
       </div>
       <h3 class="previewTitle">
@@ -36,7 +35,6 @@ export default {
   padding-top: 1vh;
 }
 .previewImage {
-  /*height: 16vh;*/
   max-height: 200px;
   overflow: hidden;
   display: block;
