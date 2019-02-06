@@ -31,14 +31,26 @@ module.exports = {
       }
     }
   ],
-  chainWebpack (config, options) {
+  chainWebpack(config, options) {
     const { isServer } = options
     // console.log(config)
     console.log(options)
     config
-    .plugin('env')
-    .use(require.resolve('webpack/lib/EnvironmentPlugin'), [{ 'GRIDFUL_CONTACTHOOK': undefined }]);
+      .plugin('env')
+      .use(require.resolve('webpack/lib/EnvironmentPlugin'), [{ 'GRIDFUL_CONTACTHOOK': undefined }]);
 
-    if (isServer) { config.externals([ nodeExternals({ whitelist: [/^vue-awesome/, /^buefy/] }) ]) }
+    /*config.module
+      .rule('load-fonts')
+      .test(/\.(woff|woff2)(\?v=\d+\.\d+\.\d+)?$/)
+      .use('file-loader')
+      .loader("file-loader")
+      .options(
+        {
+          name: '[name].[ext]',
+          outputPath: 'fonts/'
+        }
+      )*/
+
+    if (isServer) { config.externals([nodeExternals({ whitelist: [/^vue-awesome/, /^buefy/] })]) }
   }
 }

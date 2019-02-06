@@ -11,6 +11,9 @@ import Articles from '~/components/Articles.vue'
 import Fluid from '~/components/Fluid.vue'
 import Icon from 'vue-awesome/components/Icon'
 
+// import openSans from 'typeface-open-sans'
+require('typeface-montserrat')
+
 export default function (Vue, context) {
   console.log('main.js - context')
   console.log(context)
