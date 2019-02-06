@@ -34,7 +34,7 @@ export default {
 }
 .previewTitle {
   font-size: 1.5em;
-  padding-top: 1rem;
+  margin-top: .5rem;
 }
 .previewImage {
   max-height: 200px;
