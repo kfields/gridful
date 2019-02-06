@@ -1,7 +1,6 @@
 // import { Field, Control, Icon, Help } from 'buefy'
 import Buefy from 'buefy'
-import 'buefy/dist/buefy.css'
-import '~/assets/base.scss'
+import '~/assets/index.scss'
 
 import DefaultLayout from '~/layouts/Default.vue'
 import NavBar from '~/components/NavBar.vue'

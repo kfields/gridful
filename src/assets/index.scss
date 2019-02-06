@@ -1,0 +1,10 @@
+@import "~bulma/sass/utilities/_all";
+
+@import "./variables.scss";
+// Import Bulma and Buefy styles
+@import "~bulma";
+@import "~buefy/src/scss/buefy";
+
+@import "./base.scss";
+@import "./hero.scss";
+

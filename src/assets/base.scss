@@ -1,6 +1,4 @@
 $variable-columns: false;
-@import "bulma";
-@import "./hero.scss";
 
 @font-face {
   font-family: "Avenir";
@@ -41,6 +39,9 @@ body {
   line-height: 1.65;
   margin: 0;
 }
+.footer {
+  border-top: 1px solid #ddd;
+}
 
 h1,
 h2,
@@ -49,19 +50,12 @@ h3 {
   font-weight: normal;
 }
 
-a {
-  color: currentColor;
-}
-
 .wrapper {
   width: calc(100% - 10vmin);
   margin: 0 auto;
   padding: 5vmin 0;
 }
 
-/**
- * article grid
- */
 .article-list {
   margin: 0;
   padding: 0;
@@ -71,20 +65,12 @@ a {
   grid-gap: 5vmin;
 }
 
-/**
- *
- */
 .section-headline {
   padding: 0 0 0.4em 0;
   margin: 0 0 5vmin 0;
   border-bottom: 1px solid #ddd;
 }
-.footer {
-  border-top: 1px solid #ddd;
-}
-/**
- *
- */
+
 .list-inline {
   margin: 0;
   padding: 0;
