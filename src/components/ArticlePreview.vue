@@ -33,8 +33,10 @@ export default {
   padding-bottom: 1rem;
 }
 .previewTitle {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   margin-top: .5rem;
+  margin-bottom: .5rem;
+  // line-height: 1rem;
 }
 .previewImage {
   max-height: 200px;
