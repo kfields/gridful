@@ -33,7 +33,7 @@ p {
 .wrapper {
   width: calc(100% - 10vmin);
   margin: 0 auto;
-  // padding: 5vmin 0;
+  padding: 5vmin 0;
 }
 
 .article-list {
@@ -45,11 +45,11 @@ p {
   grid-gap: 5vmin;
 }
 
-.section-headline {
+/*section {
   padding: 0 0 0.4em 0;
   margin: 1rem 0 1rem 0;
   // border-bottom: 1px solid #ddd;
-}
+}*/
 
 .list-inline {
   margin: 0;

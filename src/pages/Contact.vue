@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <div class="wrapper">
-      <h1 class="section-headline">Contact us</h1>
+      <h1>Contact</h1>
     <form name="contact" method="POST" @submit.prevent="handleSubmit">
         <b-field horizontal label="Subject">
             <b-input name="subject" v-model="subject" expanded></b-input>

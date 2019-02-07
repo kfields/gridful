@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <h2 class="section-headline">Recent articles</h2>
+    <h2>Recent articles</h2>
     <ul class="article-list">
       <li v-for="edge in $static.posts.edges" :key="edge.id">
         <ArticlePreview :article="edge.node" />

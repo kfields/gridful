@@ -7,7 +7,7 @@
         </div>
       </div>
       <div class="wrapper">
-        <div class="section-headline">
+        <div>
           <h1>{{$page.post.title}}</h1>
           <p style="display: block">{{$page.post.publishDate}}</p>
         </div>
