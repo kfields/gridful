@@ -33,8 +33,14 @@ module.exports = {
       }
     },
     {
-      use: '~/plugins/plugin-seo',
+      use: '~/plugins/plugin-workbox',
       options: {
+        "globDirectory": "dist/",
+        "globPatterns": [
+          "**/*.{html,css,js,png,svg,json}"
+        ],
+        "swDest": "dist/sw.js",
+        "swSrc": "src/pwa/worker.js"
       }
     }
   ],
@@ -61,13 +67,15 @@ module.exports = {
 
     if (isServer) {
       config.externals([nodeExternals({ whitelist: [/^vue-awesome/, /^buefy/] })])
-      const WorkboxPlugin = require('workbox-webpack-plugin');
+      /*      
+      const {InjectManifest} = require('workbox-webpack-plugin');
       config
       .plugin('workbox')
-      .use(new WorkboxPlugin.InjectManifest({
-        swSrc: './src/pwa/custom-worker.js',
-        swDest: './pwa/worker.js'
+      .use(new InjectManifest({
+        swSrc: './src/pwa/worker.js',
+        swDest: './pwa/worker.js',
       }))
+      */
       const WebpackPwaManifest = require('webpack-pwa-manifest')
       config
       .plugin('pwa-manifest')

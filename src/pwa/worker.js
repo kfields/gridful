@@ -1,6 +1,13 @@
-workbox.precaching.precacheAndRoute(self.__precacheManifest || [])
+//workbox.precaching.precacheAndRoute(self.__precacheManifest || [])
+//importScripts('~/node_modules/workbox-sw/build/workbox-sw.js')
+importScripts('https://storage.googleapis.com/workbox-cdn/releases/3.6.1/workbox-sw.js');
+
+workbox.precaching.precacheAndRoute([])
 
 const worker = {
+  install (registration) {
+    console.log('Service worker is installed.')
+  },
   ready (registration) {
     console.log('Service worker is active.')
   },
@@ -27,10 +34,11 @@ const worker = {
     console.log(event)
   }
 }
+console.log('registering custom worker')
+
 for (var prop in worker) {
   // skip loop if the property is from prototype
   if(!worker.hasOwnProperty(prop)) continue;
-
   self.addEventListener(prop, worker[prop])
 }
 /*self.addEventListener('fetch', function (event) {

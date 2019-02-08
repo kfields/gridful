@@ -31,9 +31,12 @@ export default function (Vue, context) {
     require('./pwa/register-worker')
   }*/
   if (isClient && isProd && 'serviceWorker' in navigator) {
-    console.log('registering worker from main.js')
-    window.addEventListener('load', function() {
-      navigator.serviceWorker.register('/pwa/worker.js');
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/sw.js').then(registration => {
+        console.log('SW registered: ', registration);
+      }).catch(registrationError => {
+        console.log('SW registration failed: ', registrationError);
+      });
     });
   }
 
