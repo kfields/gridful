@@ -11,21 +11,32 @@ import Articles from '~/components/Articles.vue'
 import Fluid from '~/components/Fluid.vue'
 import Icon from 'vue-awesome/components/Icon'
 
+const isProd = process.env.NODE_ENV === 'production'
 export default function (Vue, context) {
   const { head, isClient } = context
   // Add Web App manifest
-  head.link.push({
-    rel: 'manifest',
-    href: '/manifest.json'
-  })
+  if(isProd) {
+    head.link.push({
+      rel: 'manifest',
+      href: '/manifest.json'
+    })
+  }
   head.meta.push({
     name: 'theme-color',
     content: '#355e3b'
   })
-
-  if(isClient) {
+  //todo:fix so this won't run in dev mode
+  /*if(isClient) {
+    console.log('registering worker from main.js')
     require('./pwa/register-worker')
+  }*/
+  if (isClient && isProd && 'serviceWorker' in navigator) {
+    console.log('registering worker from main.js')
+    window.addEventListener('load', function() {
+      navigator.serviceWorker.register('/pwa/worker.js');
+    });
   }
+
   console.log('main.js - context')
   console.log(context)
   Vue.use(Buefy)

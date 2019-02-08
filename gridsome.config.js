@@ -4,7 +4,13 @@
 // Changes here requires a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
-require('dotenv').config()
+const dotenv = require('dotenv')
+if(process.env.NODE_ENV === 'production') {
+  dotenv.config({path:'./env/prod/.env'})
+} else {
+  dotenv.config({path:'./env/dev/.env'})
+}
+
 const path = require('path')
 const nodeExternals = require('webpack-node-externals')
 
@@ -33,12 +39,13 @@ module.exports = {
     }
   ],
   chainWebpack(config, options) {
-    const { isServer } = options
+    const { isServer, isProd } = options
     // console.log(config)
+    console.log('chainWebpack options')
     console.log(options)
     config
       .plugin('env')
-      .use(require.resolve('webpack/lib/EnvironmentPlugin'), [{ 'GRIDFUL_CONTACTHOOK': undefined }]);
+      .use(require.resolve('webpack/lib/EnvironmentPlugin'), [{ 'GRIDFUL_CONTACTHOOK': undefined, 'NODE_ENV': 'development' }]);
 
     /*config.module
       .rule('load-fonts')
