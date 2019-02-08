@@ -18,6 +18,10 @@ export default function (Vue, context) {
     rel: 'manifest',
     href: '/manifest.json'
   })
+  head.meta.push({
+    name: 'theme-color',
+    content: '#355e3b'
+  })
 
   if(isClient) {
     require('./pwa/register-worker')
