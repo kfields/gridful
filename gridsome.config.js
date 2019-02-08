@@ -68,7 +68,7 @@ module.exports = {
         name: 'Gridful Blog',
         short_name: 'Gridful',
         description: 'Gridful = Gridsome + Contentful!',
-        start_url: './index.html',
+        start_url: '.',
         background_color: '#ffffff',
         theme_color: '#355e3b',
         crossorigin: 'use-credentials', //can be null, use-credentials or anonymous

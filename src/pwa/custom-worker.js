@@ -10,6 +10,7 @@ self.addEventListener('fetch', function (event) {
   // it can be empty if you just want to get rid of that error
 })
 
+/*
 self.addEventListener('activate', function(event) {
   console.log('activate, clearing cache')
   event.waitUntil(
@@ -26,6 +27,8 @@ self.addEventListener('activate', function(event) {
     })
   );
 });
+*/
+
 /*
 // Cache the Google Fonts stylesheets with a stale while revalidate strategy.
 workbox.routing.registerRoute(
