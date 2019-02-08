@@ -12,6 +12,16 @@ import Fluid from '~/components/Fluid.vue'
 import Icon from 'vue-awesome/components/Icon'
 
 export default function (Vue, context) {
+  const { head, isClient } = context
+  // Add Web App manifest
+  head.link.push({
+    rel: 'manifest',
+    href: '/manifest.json'
+  })
+
+  if(isClient) {
+    require('./pwa/register-worker')
+  }
   console.log('main.js - context')
   console.log(context)
   Vue.use(Buefy)

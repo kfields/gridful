@@ -5,6 +5,7 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 require('dotenv').config()
+const path = require('path')
 const nodeExternals = require('webpack-node-externals')
 
 module.exports = {
@@ -51,6 +52,37 @@ module.exports = {
         }
       )*/
 
-    if (isServer) { config.externals([nodeExternals({ whitelist: [/^vue-awesome/, /^buefy/] })]) }
+    if (isServer) {
+      config.externals([nodeExternals({ whitelist: [/^vue-awesome/, /^buefy/] })])
+      const WorkboxPlugin = require('workbox-webpack-plugin');
+      config
+      .plugin('workbox')
+      .use(new WorkboxPlugin.InjectManifest({
+        swSrc: './src/pwa/custom-worker.js',
+        swDest: './pwa/worker.js'
+      }))
+      const WebpackPwaManifest = require('webpack-pwa-manifest')
+      config
+      .plugin('pwa-manifest')
+      .use(new WebpackPwaManifest({
+        name: 'Gridful Blog',
+        short_name: 'Gridful',
+        description: 'Gridful = Gridsome + Contentful!',
+        background_color: '#ffffff',
+        theme_color: '#027be3',
+        crossorigin: 'use-credentials', //can be null, use-credentials or anonymous
+        fingerprints: false,
+        icons: [
+          {
+            src: path.resolve('./src/favicon.png'),
+            sizes: [96, 128, 192, 256, 384, 512] // multiple sizes
+          }/*,
+          {
+            src: path.resolve('src/assets/large-icon.png'),
+            size: '1024x1024' // you can also use the specifications pattern
+          }*/
+        ]
+      }))
+    }
   }
 }
