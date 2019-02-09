@@ -30,8 +30,8 @@ const worker = {
     console.error('Error during service worker registration:', error)
   },
   fetch (event) {
-    console.log('fetch')
-    console.log(event)
+    // console.log('fetch')
+    // console.log(event)
   }
 }
 console.log('registering custom worker')
