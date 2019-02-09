@@ -79,7 +79,7 @@ module.exports = {
         description: 'Gridful = Gridsome + Contentful!',
         start_url: '.',
         background_color: '#ffffff',
-        theme_color: '#87A96B', //Avacado
+        theme_color: '#18453B', //MSU Green
         crossorigin: 'use-credentials', //can be null, use-credentials or anonymous
         fingerprints: false,
         icons: [
