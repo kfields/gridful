@@ -74,7 +74,7 @@ module.exports = {
       config
       .plugin('pwa-manifest')
       .use(new WebpackPwaManifest({
-        name: 'Gridful Blog',
+        name: 'Gridful',
         short_name: 'Gridful',
         description: 'Gridful = Gridsome + Contentful!',
         start_url: '.',

@@ -1,5 +1,5 @@
 <template>
-  <footer class="footer">
+  <footer class="footer wrapper">
           <p>Made with
             <v-icon name="heart"/>by
             <a href="https://kfields.netlify.com">Kurtis Fields</a>
