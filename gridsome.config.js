@@ -13,6 +13,7 @@ if(process.env.NODE_ENV === 'production') {
 
 const path = require('path')
 const nodeExternals = require('webpack-node-externals')
+const workBoxConfig = require('./workbox-config')
 
 module.exports = {
   siteName: 'Gridful',
@@ -34,14 +35,7 @@ module.exports = {
     },
     {
       use: '~/plugins/plugin-workbox',
-      options: {
-        "globDirectory": "dist/",
-        "globPatterns": [
-          "**/*.{html,css,js,png,svg,json}"
-        ],
-        "swDest": "dist/sw.js",
-        "swSrc": "src/pwa/worker.js"
-      }
+      options: workBoxConfig
     }
   ],
   chainWebpack(config, options) {
@@ -85,7 +79,7 @@ module.exports = {
         description: 'Gridful = Gridsome + Contentful!',
         start_url: '.',
         background_color: '#ffffff',
-        theme_color: '#355e3b',
+        theme_color: '#87A96B', //Avacado
         crossorigin: 'use-credentials', //can be null, use-credentials or anonymous
         fingerprints: false,
         icons: [

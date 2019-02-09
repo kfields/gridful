@@ -23,7 +23,7 @@ export default function (Vue, context) {
   }
   head.meta.push({
     name: 'theme-color',
-    content: '#355e3b'
+    content: '#87A96B' //Avacado
   })
   //todo:fix so this won't run in dev mode
   /*if(isClient) {
