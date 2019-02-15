@@ -1,6 +1,9 @@
 // Set your colors
 //$primary: #8c67ef;
 //$primary-invert: findColorInvert($primary);
+$msu-green: #18453B;
+$msu-green-invert: findColorInvert($msu-green);
+
 $twitter: #4099FF;
 $twitter-invert: findColorInvert($twitter);
 
@@ -10,7 +13,7 @@ $colors: (
     "black": ($black, $white),
     "light": ($light, $light-invert),
     "dark": ($dark, $dark-invert),
-    "primary": ($primary, $primary-invert),
+    "primary": ($msu-green, $msu-green-invert),
     "info": ($info, $info-invert),
     "success": ($success, $success-invert),
     "warning": ($warning, $warning-invert),

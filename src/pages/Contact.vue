@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <div class="wrapper">
+    <div class="section">
       <h1>Contact</h1>
     <form name="contact" method="POST" @submit.prevent="handleSubmit">
         <b-field horizontal label="Subject">

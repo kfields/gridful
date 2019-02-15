@@ -2,9 +2,7 @@
   <div class="layout">
     <div class="container">
       <NavBar/>
-      <main>
-        <slot/>
-      </main>
+      <slot/>
       <FootBar/>
     </div>
   </div>

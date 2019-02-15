@@ -1,7 +1,9 @@
 <template>
   <Layout>
     <!-- <HeroBanner/> -->
-    <Articles/>
+    <main>
+      <Articles/>
+    </main>
   </Layout>
 </template>
 

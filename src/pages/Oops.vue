@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <div class="wrapper">
+    <div class="section">
       <h1>Oops!</h1>
       <p>Something went wrong on our end</p>
     </div>

@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper">
+  <div class="section">
     <ul class="article-list">
       <li v-for="edge in $static.posts.edges" :key="edge.id">
         <ArticlePreview :article="edge.node" />

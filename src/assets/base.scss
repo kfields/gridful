@@ -1,3 +1,6 @@
+.container {
+  max-width: 1200px !important;
+}
 
 .fa-icon {
   margin-left: .25em;
@@ -10,13 +13,6 @@
 .nav-logo {
   margin-right: 1em;
 }
-.nav-brand {
-  font-family: "typeface-lobster";
-}
-.hero-brand {
-  font-family: "typeface-lobster";
-}
-
 
 body {
   margin: 0;
@@ -25,16 +21,22 @@ body {
 p {
   margin-bottom: 1rem;
 }
+.section {
+  padding: 1.5rem
+}
+main .section {
+  padding: 0rem 1.5rem
+}
+main .section:first-child {
+  padding: 2rem 1.5rem
+}
+main .section:last-child {
+  padding: 0rem 1.5rem 2rem 1.5rem
+}
 
 .footer {
   border-top: 1px solid #ddd;
-  padding: 0 0 0 0;
-}
-
-.wrapper {
-  width: calc(100% - 10vmin);
-  margin: 0 auto;
-  padding: 5vmin 0;
+  padding-bottom: 3rem;
 }
 
 .article-list {
